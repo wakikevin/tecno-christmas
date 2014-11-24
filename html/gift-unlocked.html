@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>Tecno Christmas Gifts</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$(".submit").click(function() {
+		$("#overlay").show();
+		$(".congrats").css("display","table");
+		return false;
+	});
+	
+	$(".done, .close").click(function() {
+		$(".popup").hide();
+		$("#overlay").hide();
+		return false;
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+	<!-- header -->
+	<div id="header">
+  	<a id="logo" href="about.html">
+    	<img src="images/logo-blue.png" alt="Tecno Mobile" />
+    </a>
+  </div>
+  <!-- header end -->
+  <!-- banner -->
+  <div id="banner">
+  	<img src="images/banners/banner-100.jpg" alt="Banner full tree" />
+  </div>
+  <!-- banner end -->
+  <!-- points-wrapper -->
+  <div id="points-wrapper">
+  	<ul class="clearfloat">
+    	<li class="target">
+      	<div class="content">
+      		<span class="title">Target</span>
+          <span class="points">2,000 Pts</span>
+        </div>
+      </li>
+      <li class="current-pts">
+      	<div class="content">
+          <span class="title">Current pts</span>
+          <span class="points">2,000 Pts</span>	
+        </div>
+      </li>
+      <li class="share">
+      	<div class="content">
+        	<div class="btn disabled">Share</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- points-wrapper end -->
+  <!-- main-content -->
+  <div id="main-content">
+    <div id="offer-form">
+    	<div class="lockup">
+        <img src="images/lockup-blue.png" alt="Lockup" />
+      </div>
+    	<h2>Today's gift has been unlocked!</h2>
+      <p>Be among the first to submit your unique code for your chance to win.</p>
+      <form action="#" method="post" >
+      	<div class="contacts clearfloat">
+        	<div class="form-input align-left">
+          	<div class="error-wrapper">
+            	<span class="help-block"></span>
+            </div>
+          	<input type="text" value="Name:" onFocus="this.value='';" onBlur="if(!this.value)this.value='Name:';" name="name" id="name" class="textbox" />
+          </div>
+          <div class="form-input align-right">
+          	<div class="error-wrapper">
+            	<span class="help-block"></span>
+            </div>
+          	<input type="text" value="Email:" onFocus="this.value='';" onBlur="if(!this.value)this.value='Email:';" name="email" id="email" 
+            	class="textbox" />
+          </div>
+          <div class="form-input align-left">
+          	<div class="error-wrapper">
+            	<span class="help-block"></span>
+            </div>
+          	<input type="text" value="Mobile No:" onFocus="this.value='';" onBlur="if(!this.value)this.value='Mobile No:';" name="mobile" id="mobile" 
+            	class="textbox" />
+          </div>
+          <div class="form-input align-right">
+          	<div class="error-wrapper">
+            	<span class="help-block"></span>
+            </div>
+          	<input type="text" value="Location:" onFocus="this.value='';" onBlur="if(!this.value)this.value='Location:';" name="location" id="location" 
+            class="textbox" />
+          </div>
+        </div>
+        <input type="submit" class="btn submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+  <!-- main-content end -->
+  <!-- footer -->
+  <div id="footer">
+  	<a href="terms.html" class="terms">Terms and conditions</a>
+  </div>
+  <!-- footer end -->
+</div>
+
+<div id="overlay">
+	<div class="popup congrats">
+  	<div class="content">
+    	<a href="#" class="close">
+      	<img src="images/close.png" alt="Close" />
+      </a>
+    	<div class="lockup">
+        <img src="images/lockup-blue.png" alt="Lockup" />
+      </div>
+      <h2>Congratulations!</h2>
+      <p>You are the <strong>8th</strong> person to submit the form. A coupon has been sent to your email for you to redeem your prize.</p>
+			<a href="#" class="btn small done">Done</a>
+    </div>
+  </div>
+  
+  <div class="popup sorry">
+  	<div class="content">
+    	<a href="#" class="close">
+      	<img src="images/close.png" alt="Close" />
+      </a>
+    	<div class="lockup">
+        <img src="images/lockup-blue.png" alt="Lockup" />
+      </div>
+      <h2>Sorry try again tomorrow</h2>
+      <p>You are the <strong>11th</strong> person to submit the form.</p>
+			<a href="#" class="btn small done">Done</a>
+    </div>
+  </div>
+</div>
+
+<!-- preloader -->
+<div class="preloader">
+	
+  <div class="spinner">
+  	<span class="lockup"><img src="images/lockup-white.png" alt="Lockup" /></span>
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+</div>
+<!-- preloader end -->	
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>Tecno Christmas Gifts</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+		
+	$("#overlay").show();
+	$(".sorry").css("display","table");
+	
+	$(".share .btn").click(function() {
+		$("#overlay").show();
+		$(".thanks").css("display","table");
+		return false;
+	});
+	
+	$(".done, .close").click(function() {
+		$(".popup").hide();
+		$("#overlay").hide();
+		return false;
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+	<!-- header -->
+	<div id="header">
+  	<a id="logo" href="about.html">
+    	<img src="images/logo-blue.png" alt="Tecno Mobile" />
+    </a>
+  </div>
+  <!-- header end -->
+  
+  <!-- banner -->
+  <div id="banner">
+  	<img src="images/banners/banner-0.jpg" alt="Banner empty tree" />
+  </div>
+  <!-- banner end -->
+  
+  <!-- points-wrapper -->
+  <div id="points-wrapper">
+  	<ul class="clearfloat">
+    	<li class="target">
+      	<div class="content">
+      		<span class="title">Target</span>
+          <span class="points">2,000 Pts</span>
+        </div>
+      </li>
+      <li class="current-pts">
+      	<div class="content">
+          <span class="title">Current pts</span>
+          <span class="points">2,000 Pts</span>	
+        </div>
+      </li>
+      <li class="share">
+      	<div class="content">
+        	<a href="#" class="btn">Share</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- points-wrapper end -->
+  <!-- main-content -->
+  <div id="main-content">
+    
+    <!-- gift-wrapper -->
+    <div id="gift-wrapper">
+    	<div class="gift-details">
+      	<h2>The Phantom Z Mini</h2>
+        <p>Today’s gift is the amazing Phantom Z Mini. Usher in the New Year with the season’s most wanted smart phone.</p>
+      </div>
+      <div class="gift-pic">
+      	<img src="images/gifts/phantom-z-mini.png" alt="Phantom Z Mini" />
+      </div>
+    </div>
+    <!-- gift-wrapper end -->  
+  </div>
+  <!-- main-content end -->
+  <!-- footer -->
+  <div id="footer">
+  	<a href="terms.html" class="terms">Terms and conditions</a>
+  </div>
+  <!-- footer end -->
+</div>
+
+<div id="overlay">
+	<div class="popup thanks">
+  	<div class="content">
+    	<a href="#" class="close">
+      	<img src="images/close.png" alt="Close" />
+      </a>
+    	<div class="lockup">
+        <img src="images/lockup-blue.png" alt="Lockup" />
+      </div>
+      <h2>Thank you for participating</h2>
+      <p>A unique code has been sent to your email address. Use it to feel in the form when the deal has been unlcoked to redeem your prize</p>
+			<a href="#" class="btn small done">Share Again</a>
+    </div>
+  </div>
+  
+  <div class="popup sorry">
+  	<div class="content">
+    	<a href="#" class="close">
+      	<img src="images/close.png" alt="Close" />
+      </a>
+    	<div class="lockup">
+        <img src="images/lockup-blue.png" alt="Lockup" />
+      </div>
+      <h2>Sorry try again tomorrow</h2>
+      <p>You have reached the limit of shares for today. Only <strong>10</strong> are allowed per day.</p>
+			<a href="#" class="btn small done">Done</a>
+    </div>
+  </div>
+  
+</div>
+
+<!-- preloader -->
+<div class="preloader">
+	
+  <div class="spinner">
+  	<span class="lockup"><img src="images/lockup-white.png" alt="Lockup" /></span>
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+</div>
+<!-- preloader end -->	
+
+</body>
+</html>
