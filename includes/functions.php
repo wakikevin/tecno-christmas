@@ -1,4 +1,12 @@
 <?php
+//include config file
+include('config.php');
+
+//include database class
+include('ORM.class.php');
+
+//include mailer class
+include('phpmailer/class.phpmailer.php');
 
 //function to convert images to data uris
 function convertToUri($image){
@@ -19,6 +27,21 @@ function convertToUri($image){
 
 return $src;
 	
+}
+
+function initializeDB(){
+	
+	ORM::configure(array(
+    'connection_string' => CONNECTION_STRING,
+    'username' => DATABASE_USER,
+    'password' => DATABASE_PASSWORD
+	));
+
+}
+
+function sendEmail(){
+	
+
 }
 
 ?>

@@ -3,6 +3,9 @@
 include('includes/header.php');
 
 ?>
+<audio id="bells" preload="auto" autoplay>
+  <source src="audio/Sleigh-Bells.mp3"></source>
+</audio>
 <div id="wrapper">
 	<div class="landing-bg">
   	<div class="logo">
@@ -19,9 +22,10 @@ include('includes/header.php');
       </div>
       <h2>Decorate the Tecno Christmas tree &amp; win!</h2>
     </div>
-    <a href="about.php" class="btn-start">Start<img src="<?php echo convertToUri('images/arrow.png'); ?>" alt="Start" /></a>
+    <a href="about.php" class="btn">Start</a>
   </div>
 </div>
+
 <?php
  //include footer
  include('includes/footer.php');

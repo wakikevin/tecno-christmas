@@ -6,10 +6,21 @@
 <title>Tecno Christmas Gifts</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.snow.min.1.0.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
+
+<script>
+$(document).ready( function(){
+	$.fn.snow();
+});
+</script>
+
 </head>
 
 <body>
+<audio id="bells" preload="auto" autoplay="true">
+  <source src="audio/Sleigh-Bells.mp3"></source>
+</audio>
 <div id="wrapper">
 	<div class="landing-bg">
   	<div class="logo">
@@ -26,7 +37,7 @@
       </div>
       <h2>Decorate the Tecno Christmas tree &amp; win!</h2>
     </div>
-    <a href="about.html" class="btn-start">Start<img src="images/arrow.png" alt="Start" /></a>
+    <a href="about.html" class="btn">Start</a>
   </div>
 </div>
 
